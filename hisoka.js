@@ -1184,11 +1184,6 @@ break
                 for (let i of anu) {
                     await sleep(1500)
                     let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Status Bot',
                                     id: 'ping'
@@ -1209,8 +1204,8 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Server Back Online'
+                                    
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
