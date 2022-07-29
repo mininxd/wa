@@ -2733,9 +2733,6 @@ let capt = `⭔ Title: ${judul}
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `
 
-Runtime : ${runtime(process.uptime()
-
-
 ┌──• *Group Menu*
 │
 │> ${prefix}linkgroup
