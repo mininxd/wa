@@ -2368,7 +2368,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
 		m.reply(`Berhasil menghapus '${text}' dari list pesan`)
             }
 	    break
-	    case 'anonymous': {
+	    case 'anknono': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
 				let buttons = [
                     { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
@@ -2376,7 +2376,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 hisoka.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await hisoka.getName(m.sender)} Welcome To Anonymous Chat\n\nKlik Button Dibawah Ini Untuk Mencari Partner\`\`\``, hisoka.user.name, m)
             }
 			break
-            case 'keluar': case 'leave': {
+            case 'kelar9999': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 let room = Object.values(db.data.anonymous).find(room => room.check(m.sender))
                 if (!room) {
@@ -2392,7 +2392,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 delete db.data.anonymous[room.id]
                 if (command === 'leave') break
             }
-            case 'mulai': case 'start': {
+            case 'mulai9999': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 if (Object.values(db.data.anonymous).find(room => room.check(m.sender))) {
                     let buttons = [
@@ -2432,7 +2432,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 }
                 break
             }
-            case 'next': case 'lanjut': {
+            case 'next9999': {
                 if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 let romeo = Object.values(db.data.anonymous).find(room => room.check(m.sender))
                 if (!romeo) {
@@ -2535,7 +2535,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 m.reply(respon)
             }
             break
-            case 'speedtest': {
+            case 'speedtesejejest': {
             m.reply('Testing Speed...')
             let cp = require('child_process')
             let { promisify } = require('util')
@@ -2552,11 +2552,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': {
+            case 'owner': case 'admin': {
                 hisoka.sendContact(m.chat, global.owner, m)
             }
             break
-            case 'playstore': {
+            case 'playstofedgrere': {
             if (!text) throw `Example : ${prefix + command} clash of clans`
             let res = await fetchJson(api('zenz', '/webzone/playstore', { query: text }, 'apikey'))
             let teks = `⭔ Playstore Search From : ${text}\n\n`
@@ -2569,7 +2569,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             m.reply(teks)
             }
             break
-            case 'gsmarena': {
+            case 'gsmjkhftgarena': {
             if (!text) throw `Example : ${prefix + command} samsung`
             let res = await fetchJson(api('zenz', '/webzone/gsmarena', { query: text }, 'apikey'))
             let { judul, rilis, thumb, ukuran, type, storage, display, inchi, pixel, videoPixel, ram, chipset, batrai, merek_batre, detail } = res.result
@@ -2590,7 +2590,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case 'jadwalbioskop': {
+            case 'jadjobgttwalbioskop': {
             if (!text) throw `Example: ${prefix + command} jakarta`
             let res = await fetchJson(api('zenz', '/webzone/jadwalbioskop', { kota: text }, 'apikey'))
             let capt = `Jadwal Bioskop From : ${text}\n\n`
@@ -2602,7 +2602,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, res.result[0].thumb, capt, m)
             }
             break
-            case 'nowplayingbioskop': {
+            case 'nkpgccowplayingbioskop': {
             let res = await fetchJson(api('zenz', '/webzone/nowplayingbioskop', {}, 'apikey'))
             let capt = `Now Playing Bioskop\n\n`
             for (let i of res.result){
@@ -2613,7 +2613,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, res.result[0].img, capt, m)
             }
             break
-            case 'aminio': {
+            case 'amijjjoknio': {
             if (!text) throw `Example: ${prefix + command} free fire`
             let res = await fetchJson(api('zenz', '/webzone/amino', { query: text }, 'apikey'))
             let capt = `Aminio Search From : ${text}\n\n`
@@ -2627,7 +2627,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, 'https://'+res.result[0].community_thumb, capt, m)
             }
             break
-            case 'wattpad': {
+            case 'wauj9jnttpad': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('zenz', '/webzone/wattpad', { query: text }, 'apikey'))
             let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
@@ -2642,7 +2642,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case 'webtoons': {
+            case 'wejjihhjbtoons': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('zenz', '/webzone/webtoons', { query: text }, 'apikey'))
             let capt = `Webtoons Search From : ${text}\n\n`
@@ -2656,7 +2656,7 @@ let capt = `⭔ Title: ${judul}
             m.reply(capt)
             }
             break
-            case 'drakor': {
+            case 'drakkkkkor': {
             if (!text) throw `Example : ${prefix + command} love`
             let res = await fetchJson(api('zenz', '/webzone/drakor', { query: text }, 'apikey'))
             let capt = `Drakor Search From : ${text}\n\n`
@@ -2730,80 +2730,80 @@ let capt = `⭔ Title: ${judul}
 
 ┌──• *Group Menu*
 │
-│> linkgroup
-│> ephemeral [option]
-│> setppgc [image]
-│> setname [text]
-│> setdesc [text]
-│> group [option]
-│> editinfo [option]
-│> add @user
-│> kick @user
-│> hidetag [text]
-│> everyone [text]
-│> totag [reply]
-│> antilink [on/off]
-│> mute [on/off]
-│> promote @user
-│> demote @user
-│> vote [text]
-│> devote
-│> upvote
-│> cekvote
-│> hapusvote
+│/linkgroup
+│/ephemeral [option]
+│/setppgc [image]
+│/setname [text]
+│/setdesc [text]
+│/group [option]
+│/editinfo [option]
+│/add @user
+│/kick @user
+│/hidetag [text]
+│/everyone [text]
+│/totag [reply]
+│/antilink [on/off]
+│/mute [on/off]
+│/promote @user
+│/demote @user
+│/vote [text]
+│/devote
+│/upvote
+│/cekvote
+│/hapusvote
 │
 └───────•
 
 ┌──• *Youtube  Menu*
 │
-│> ytmp3 [url]
-│> ytmp4 [url]
+│/ytmp3 [url]
+│/ytmp4 [url]
 │
 └───────•
 
 
 ┌──• *Convert Menu*
 │
-│> attp [text] _beta_
-│> ttp [text] _beta_
-│> toimage
-│> sticker
-│> stickerwm
-│> emojimix
+│/attp [text] _beta_
+│/ttp [text] _beta_
+│/toimage
+│/sticker
+│/stickerwm
+│/emojimix
 │
 └───────•
 
 ┌──• *Main Menu*
 │
-│> ping
-│> owner
-│> menu / help / ?
-│> quoted
-│> listonline
+│/ping
+│/owner
+│/menu / help / ?
+│/quoted
+│/listonline
 │
 └───────•
 
 ┌──• *Islamic Menu*
 │
-│> iqra
-│> alquran
-│> tafsirsurah
+│/iqra
+│/alquran
+│/tafsirsurah
 │
 └───────•
 
 ┌──• *Voice Changer*
 │
-│> bass
-│> blown
-│> deep
-│> earrape
-│> fast
-│> fat
-│> nightcore
-│> reverse
-│> robot
-│> slow
-│> tupai
+│/bass
+│/blown
+│/deep
+│/earrape
+│/fast
+│/fat
+│/nightcore
+│/reverse
+│/robot
+│/slow
+│/tupai
 │
 └───────•
 
