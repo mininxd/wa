@@ -23,7 +23,7 @@ global.premium = ['6289501303263']
 global.packname = ''
 global.author = 'mininproject.dev'
 global.sessionName = 'hisoka'
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['','!','.','🐦','🐤']
 global.sp = '⭔'
 global.mess = {
     success: '✓ Success',
@@ -40,7 +40,7 @@ global.limitawal = {
     premium: "Infinity",
     free: "Infinity"
 }
-global.thumb = fs.readFileSync('./lib/thumb.jpg')
+global.thumb = fs.readFileSync('./lib/thumb.png')
 global.visoka = { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU' }
 
 let file = require.resolve(__filename)
