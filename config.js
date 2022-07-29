@@ -40,7 +40,7 @@ global.limitawal = {
     premium: "Infinity",
     free: "Infinity"
 }
-global.thumb = fs.readFileSync(url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU')
+global.thumb = fs.readFileSync('./lib/thumb.jpg')
 global.visoka = { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU' }
 
 let file = require.resolve(__filename)
