@@ -831,11 +831,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': {
+            case 'tagall': case 'everyone': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 *👥 Tag All* 〙✪══
+let teks = `══✪〘 *👥 Everyone* 〙✪══
  
  ➲ *Pesan : ${q ? q : 'kosong'}*\n\n`
                 for (let mem of participants) {
@@ -2768,35 +2768,13 @@ let capt = `⭔ Title: ${judul}
 │> ${prefix}twitter [url]
 │> ${prefix}twittermp3 [url]
 │> ${prefix}facebook [url]
-│> ${prefix}pinterestdl [url]
 │> ${prefix}ytmp3 [url]
 │> ${prefix}ytmp4 [url]
-│> ${prefix}getmusic [query]
-│> ${prefix}getvideo [query]
-│> ${prefix}umma [url]
-│> ${prefix}joox [query]
-│> ${prefix}soundcloud [url]
-│
-└───────•
-
-┌──• *Search Menu*
-│
-│> ${prefix}play [query]
-│> ${prefix}yts [query]
-│> ${prefix}google [query]
-│> ${prefix}gimage [query]
-│> ${prefix}pinterest [query]
-│> ${prefix}wallpaper [query]
-│> ${prefix}wikimedia [query]
-│> ${prefix}ytsearch [query]
-│> ${prefix}ringtone [query]
-│> ${prefix}stalk [option] [query]
 │
 └───────•
 
 ┌──• *Primbon Menu*
 │
-│> ${prefix}nomorhoki
 │> ${prefix}artimimpi
 │> ${prefix}artinama
 │> ${prefix}ramaljodoh
@@ -2831,24 +2809,11 @@ let capt = `⭔ Title: ${judul}
 
 ┌──• *Convert Menu*
 │
-│> ${prefix}attp
 │> ${prefix}ttp
 │> ${prefix}toimage
-│> ${prefix}removebg
 │> ${prefix}sticker
 │> ${prefix}stickerwm
 │> ${prefix}emojimix
-│> ${prefix}emojimix2
-│> ${prefix}tovideo
-│> ${prefix}togif
-│> ${prefix}tourl
-│> ${prefix}tovn
-│> ${prefix}tomp3
-│> ${prefix}toaudio
-│> ${prefix}ebinary
-│> ${prefix}dbinary
-│> ${prefix}styletext
-│> ${prefix}smeme
 │
 └───────•
 
@@ -2856,12 +2821,8 @@ let capt = `⭔ Title: ${judul}
 │
 │> ${prefix}ping
 │> ${prefix}owner
-│> ${prefix}menu / ${prefix}help / ${prefix}?
-│> ${prefix}delete
-│> ${prefix}infochat
+│> ${prefix}menu / @help / @?
 │> ${prefix}quoted
-│> ${prefix}listpc
-│> ${prefix}listgc
 │> ${prefix}listonline
 │
 └───────•
