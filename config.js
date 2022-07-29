@@ -14,16 +14,16 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://zenzapis.xyz': 'API KEY',
 }
 
 // Other
 global.owner = ['6289501303263']
-global.premium = ['6289501303263']
+global.premium = ['6289501303263','6285725860917','62895342991259','6282327316783']
 global.packname = ''
 global.author = 'mininproject.dev'
 global.sessionName = 'hisoka'
-global.prefa = ['','!','.','🐦','🐤']
+global.prefa = ['!','.','/']
 global.sp = '⭔'
 global.mess = {
     success: '✓ Success',
@@ -34,13 +34,13 @@ global.mess = {
     private: 'Fitur Digunakan Hanya Untuk Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
     wait: 'Loading...',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
+    endLimit: 'Server Offline',
 }
 global.limitawal = {
     premium: "Infinity",
-    free: "Infinity"
+    free: 0
 }
-global.thumb = fs.readFileSync('./lib/thumb.png')
+global.thumb = fs.readFileSync(url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU')
 global.visoka = { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU' }
 
 let file = require.resolve(__filename)
