@@ -2730,80 +2730,82 @@ let capt = `⭔ Title: ${judul}
 
 ┌──• *Group Menu*
 │
-│/linkgroup
-│/ephemeral [option]
-│/setppgc [image]
-│/setname [text]
-│/setdesc [text]
-│/group [option]
-│/editinfo [option]
-│/add @user
-│/kick @user
-│/hidetag [text]
-│/everyone [text]
-│/totag [reply]
-│/antilink [on/off]
-│/mute [on/off]
-│/promote @user
-│/demote @user
-│/vote [text]
-│/devote
-│/upvote
-│/cekvote
-│/hapusvote
+│.linkgroup
+│.ephemeral [option]
+│.setppgc [image]
+│.setname [text]
+│.setdesc [text]
+│.group [option]
+│.editinfo [option]
+│.add @user
+│.kick @user
+│.hidetag [text]
+│.everyone [text]
+│.totag [reply]
+│.antilink [on/off]
+│.mute [on/off]
+│.promote @user
+│.demote @user
+│.vote [text]
+│.devote
+│.upvote
+│.cekvote
+│.hapusvote
 │
 └───────•
 
 ┌──• *Youtube  Menu*
 │
-│/ytmp3 [url]
-│/ytmp4 [url]
+│.ytmp3 [url]
+│.ytmp4 [url]
 │
 └───────•
 
 
 ┌──• *Convert Menu*
 │
-│/attp [text] _beta_
-│/ttp [text] _beta_
-│/toimage
-│/sticker
-│/stickerwm
-│/emojimix
+│.attp [text] _beta_
+│.ttp [text] _beta_
+│.toimage
+│.togif
+│.tomp4
+│.sticker
+│.stickerwm
+│.emojimix
 │
 └───────•
 
 ┌──• *Main Menu*
 │
-│/ping
-│/owner
-│/menu / help / ?
-│/quoted
-│/listonline
+│.ping
+│.owner
+│.menu / help / ?
+│.quoted
+│.listonline
 │
 └───────•
 
 ┌──• *Islamic Menu*
 │
-│/iqra
-│/alquran
-│/tafsirsurah
+│.iqra
+│.alquran
+│.tafsirsurah
 │
 └───────•
 
 ┌──• *Voice Changer*
 │
-│/bass
-│/blown
-│/deep
-│/earrape
-│/fast
-│/fat
-│/nightcore
-│/reverse
-│/robot
-│/slow
-│/tupai
+│.bass
+│.blown
+│.deep
+│.earrape
+│.fast
+│.fat
+│.nightcore
+│.reverse
+│.robot
+│.slow
+│.tupai
 │
 └───────•
 
