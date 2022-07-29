@@ -831,7 +831,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': case 'everyone': {
+            case 'everyone': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -2730,131 +2730,84 @@ let capt = `⭔ Title: ${judul}
 
 ┌──• *Group Menu*
 │
-│> ${prefix}linkgroup
-│> ${prefix}ephemeral [option]
-│> ${prefix}setppgc [image]
-│> ${prefix}setname [text]
-│> ${prefix}setdesc [text]
-│> ${prefix}group [option]
-│> ${prefix}editinfo [option]
-│> ${prefix}add @user
-│> ${prefix}kick @user
-│> ${prefix}hidetag [text]
-│> ${prefix}tagall [text]
-│> ${prefix}totag [reply]
-│> ${prefix}antilink [on/off]
-│> ${prefix}mute [on/off]
-│> ${prefix}promote @user
-│> ${prefix}demote @user
-│> ${prefix}vote [text]
-│> ${prefix}devote
-│> ${prefix}upvote
-│> ${prefix}cekvote
-│> ${prefix}hapusvote
+│> linkgroup
+│> ephemeral [option]
+│> setppgc [image]
+│> setname [text]
+│> setdesc [text]
+│> group [option]
+│> editinfo [option]
+│> add @user
+│> kick @user
+│> hidetag [text]
+│> everyone [text]
+│> totag [reply]
+│> antilink [on/off]
+│> mute [on/off]
+│> promote @user
+│> demote @user
+│> vote [text]
+│> devote
+│> upvote
+│> cekvote
+│> hapusvote
 │
 └───────•
 
-┌──• *Downloader Menu*
+┌──• *Youtube  Menu*
 │
-│> ${prefix}tiktoknowm [url]
-│> ${prefix}tiktokwm [url]
-│> ${prefix}tiktokmp3 [url]
-│> ${prefix}instagram [url]
-│> ${prefix}twitter [url]
-│> ${prefix}twittermp3 [url]
-│> ${prefix}facebook [url]
-│> ${prefix}ytmp3 [url]
-│> ${prefix}ytmp4 [url]
+│> ytmp3 [url]
+│> ytmp4 [url]
 │
 └───────•
 
-┌──• *Primbon Menu*
-│
-│> ${prefix}artimimpi
-│> ${prefix}artinama
-│> ${prefix}ramaljodoh
-│> ${prefix}ramaljodohbali
-│> ${prefix}suamiistri
-│> ${prefix}ramalcinta
-│> ${prefix}cocoknama
-│> ${prefix}pasangan
-│> ${prefix}jadiannikah
-│> ${prefix}sifatusaha
-│> ${prefix}rezeki
-│> ${prefix}pekerjaan
-│> ${prefix}nasib
-│> ${prefix}penyakit
-│> ${prefix}tarot
-│> ${prefix}fengshui
-│> ${prefix}haribaik
-│> ${prefix}harisangar
-│> ${prefix}harisial
-│> ${prefix}nagahari
-│> ${prefix}arahrezeki
-│> ${prefix}peruntungan
-│> ${prefix}weton
-│> ${prefix}karakter
-│> ${prefix}keberuntungan
-│> ${prefix}memancing
-│> ${prefix}masasubur
-│> ${prefix}zodiak
-│> ${prefix}shio
-│
-└───────•
 
 ┌──• *Convert Menu*
 │
-│> ${prefix}ttp
-│> ${prefix}toimage
-│> ${prefix}sticker
-│> ${prefix}stickerwm
-│> ${prefix}emojimix
+│> attp [text] _beta_
+│> ttp [text] _beta_
+│> toimage
+│> sticker
+│> stickerwm
+│> emojimix
 │
 └───────•
 
 ┌──• *Main Menu*
 │
-│> ${prefix}ping
-│> ${prefix}owner
-│> ${prefix}menu / @help / @?
-│> ${prefix}quoted
-│> ${prefix}listonline
-│
-└───────•
-
-┌──• *Anonymous Menu*
-│
-│> ${prefix}anonymous
-│> ${prefix}start
-│> ${prefix}next
-│> ${prefix}keluar
+│> ping
+│> owner
+│> menu / help / ?
+│> quoted
+│> listonline
 │
 └───────•
 
 ┌──• *Islamic Menu*
 │
-│> ${prefix}iqra
-│> ${prefix}hadist
-│> ${prefix}alquran
-│> ${prefix}tafsirsurah
+│> iqra
+│> alquran
+│> tafsirsurah
 │
 └───────•
 
 ┌──• *Voice Changer*
 │
-│> ${prefix}bass
-│> ${prefix}blown
-│> ${prefix}deep
-│> ${prefix}earrape
-│> ${prefix}fast
-│> ${prefix}fat
-│> ${prefix}nightcore
-│> ${prefix}reverse
-│> ${prefix}robot
-│> ${prefix}slow
-│> ${prefix}tupai
+│> bass
+│> blown
+│> deep
+│> earrape
+│> fast
+│> fat
+│> nightcore
+│> reverse
+│> robot
+│> slow
+│> tupai
 │
 └───────•
+
+_No NSFW Content <3_
 `
                 let btn = [ {
                                 quickReplyButton: {
