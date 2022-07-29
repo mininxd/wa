@@ -72,7 +72,7 @@ async function startHisoka() {
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['mininproject.dev','Chromium','1.0.52.devbuild'],
+        browser: ['mininproject.dev','Chromium','103.0.5060.134'],
         auth: state
     })
 
