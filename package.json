@@ -2,10 +2,10 @@
   "name": "hisoka-morou",
   "version": "2.4.6",
   "description": "WhatsApp Using Lib Baileys Multi Device",
-  "main": "botwa.js",
+  "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node botwa.js"
+    "start": "node index.js"
   },
   "keywords": [
     "termux",
