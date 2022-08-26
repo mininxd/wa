@@ -1,9 +1,3 @@
-/**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
-*/
-
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -38,7 +32,7 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 0
+    free: "Infinity"
 }
 global.thumb = fs.readFileSync('./lib/thumb.png')
 global.visoka = { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZT4NETLvQjO6SsjhZkPwPiLVGEFhaORgqA&usqp=CAU' }
