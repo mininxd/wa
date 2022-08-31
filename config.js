@@ -1,3 +1,9 @@
+/**
+   * Create By Dika Ardnt.
+   * Contact Me on wa.me/6288292024190
+   * Follow https://github.com/DikaArdnt
+*/
+
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -8,7 +14,7 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'YOUR API KEY',
+	'https://zenzapis.xyz': '0000',
 }
 
 // Other
@@ -18,7 +24,7 @@ global.packname = 'Hisoka Morrow'
 global.author = 'mininproject.dev'
 global.sessionName = 'hisoka'
 global.prefa = ['!','.','/']
-global.sp = '⭔'
+global.sp = '.'
 global.mess = {
     success: '✓ Success',
     admin: 'Fitur Khusus Admin Group!',

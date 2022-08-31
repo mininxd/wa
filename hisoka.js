@@ -22,16 +22,6 @@ const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, getGroupAdmins } = require('./lib/myfunc')
 
 // read database
-let tebaklagu = db.data.game.tebaklagu = []
-let _family100 = db.data.game.family100 = []
-let kuismath = db.data.game.math = []
-let tebakgambar = db.data.game.tebakgambar = []
-let tebakkata = db.data.game.tebakkata = []
-let caklontong = db.data.game.lontong = []
-let caklontong_desk = db.data.game.lontong_desk = []
-let tebakkalimat = db.data.game.kalimat = []
-let tebaklirik = db.data.game.lirik = []
-let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
@@ -1024,9 +1014,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
           
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `
-
-┌──• *Group Menu*
+                anu = `┌──• *Group Menu*
 │
 │.linkgroup
 │.ephemeral [option]
@@ -1106,12 +1094,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 │
 └───────•
 
-┌──• *Others*
-│
-│.styletext [text]
-│
-└───────•
-
 _No NSFW Content <3_
 `
                 let btn = [ {
@@ -1120,9 +1102,7 @@ _No NSFW Content <3_
                                     id: 'ping'
                                 }
                             }]
-                            
-                            
-                         let setbot = db.data.settings[botNumber]
+                            let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn, global.thumb)
                         } else if (setbot.templateGif) {
