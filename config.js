@@ -18,8 +18,8 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6289501303263']
-global.premium = ['6289501303263','6285725860917','62895342991259','6282327316783']
+global.owner = ['08123456789'] //nomor hpmu sebagai pemilik bot
+global.premium = ['08123456789']
 global.packname = 'Hisoka Morrow'
 global.author = 'mininproject.dev'
 global.sessionName = 'hisoka'
