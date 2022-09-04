@@ -18,10 +18,10 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['08123456789'] //nomor hpmu sebagai pemilik bot
-global.premium = ['08123456789']
+global.owner = ['089671377960'] //nomor hpmu sebagai pemilik bot
+global.premium = ['089671377960']
 global.packname = ''
-global.author = 'mininproject.dev'
+global.author = 'Dayyrct'
 global.sessionName = 'hisoka'
 global.prefa = ['!','.','/']
 global.sp = '.'
