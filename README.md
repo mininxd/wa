@@ -1,4 +1,27 @@
-## Bot Menu
+# Bot Menu
+
+### Owner Menu
+┌──• *Owner Menu*\
+│\
+│.react [emoji]\
+│.chat [option]\
+│.join [link]\
+│.leave\
+│.block @user\
+│.unblock @user\
+│.bcgroup [text]\
+│.bcall [text]\
+│.setppbot [image]\
+│.setexif\
+│.setmenu [option]\
+│.anticall [on/off]\
+│.setstatus\
+│.setnamebot\
+│\
+└───────•
+
+
+### Untuk Umum
 ┌──• *Group Menu*\
 │\
 │.linkgroup\
@@ -77,3 +100,6 @@
 │.tupai\
 │\
 └───────•
+
+
+
