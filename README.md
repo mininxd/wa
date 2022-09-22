@@ -1,5 +1,4 @@
-
-<a href="https://colab.research.google.com/github/MininxD/wa/blob/master/colab.ipynb">
+<a href="https://colab.research.google.com/github/MininxD/wa/blob/master/Bot-Whatsapp-HISOKA-MOROU.ipynb">
 <img src="https://colab.research.google.com/assets/colab-badge.svg">
 </a>
 <br>
