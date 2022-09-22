@@ -1,3 +1,8 @@
+
+<a href="https://colab.research.google.com/github/MininxD/wa/blob/master/colab.ipynb">
+<img src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+<br>
 # Bot Menu
 
 ### Owner Menu
