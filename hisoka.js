@@ -252,11 +252,9 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 *everyone* 〙✪══
- 
- ➲ *Pesan : ${q ? q : ''}*\n\n`
+let teks = ``
                 for (let mem of participants) {
-                teks += `⭔ @${mem.id.split('@')[0]}\n`
+                teks += `@${mem.id.split('@')[0]}`
                 }
                 hisoka.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
